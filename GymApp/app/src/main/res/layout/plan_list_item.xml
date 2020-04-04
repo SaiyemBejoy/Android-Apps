@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    app:cardCornerRadius="25dp"
+    android:padding="10dp"
+    android:layout_margin="15dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/emptyCheckBox"
+            android:visibility="gone"
+            android:src="@drawable/ic_empty_checkbox"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/filledCheckBox"
+            android:visibility="gone"
+            android:src="@drawable/ic_filled_checkbox"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activityName"
+            android:text="Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:id="@+id/activityImage"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/activityName"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeRelLayout"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/activityImage">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/txtTimeExplain"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zero"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/txtTimeAmount"
+                android:layout_toRightOf="@+id/txtTimeExplain"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="minutes"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/txtTimeAmount"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/txtMinutes"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtShortDescription"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:text="Short Description"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/timeRelLayout"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
