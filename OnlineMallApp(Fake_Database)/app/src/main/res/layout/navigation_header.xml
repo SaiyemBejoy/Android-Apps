@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="#009688"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="15dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/my_app_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MJS Mall"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/website"
+        android:layout_marginBottom="15dp"
+        android:text="https://sites.google.com/view/mjsaiyem"
+        android:textColor="#fff"/>
+
+</LinearLayout>
